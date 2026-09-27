@@ -1,0 +1,55 @@
+import random as r
+
+lista = list()
+
+for i in range(20):
+
+  x = r.randint(0, 50)
+  lista.append(x)
+
+print(f' Lista sorteada: {lista}')
+
+j = 0
+while j < len(lista):
+
+  if lista[j] % 7 == 0:
+
+    indice = j
+    break
+
+  j = j + 1
+
+if j < 0 or j > 20:
+
+  print(' Não há múltiplos de 7 nessa lista! ')
+
+else:
+
+  print(f' O primeiro elemento múltiplo de 7 está na posição {j}.')
+
+ordenada = list()
+ordenada = sorted(lista)
+print(f' Lista em ordem crescente: {ordenada}')
+
+par = list()
+qpar = 0
+impar = list()
+qimpar = 0
+
+for j in range(len(lista)):
+
+  if ordenada[j] % 2 == 0:
+
+    par.append(ordenada[j])
+    qpar += 1
+
+  else:
+
+    impar.append(ordenada[j])
+    qimpar += 1
+
+print(f' Lista de pares: {par}')
+print(f' Lista de ímpares: {impar}')
+
+print(f' {qpar} números pares.')
+print(f' {qimpar} números ímpares.')
