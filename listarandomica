@@ -1,5 +1,7 @@
 #comentário para realizar um merge do reposítorio, meu nome é lucas, olá mundo!!!!!
 
+print("Hello Wolrd")
+
 
 import random as r
 
