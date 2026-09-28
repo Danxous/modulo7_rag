@@ -1,3 +1,6 @@
+#comentário para realizar um merge do reposítorio, meu nome é lucas, olá mundo!!!!!
+
+
 import random as r
 
 lista = list()
